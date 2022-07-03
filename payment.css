@@ -4,31 +4,39 @@
     box-sizing: border-box;
     outline: none; border:none;
 }
-nav{
-    display: flex;
-    align-items: center;
-    padding: 20px 7%;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-
-}
-
-.logo{
-    width: 130px;
-    cursor: pointer;
-}
-
-
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:50px;
-    min-height: 100vh;
+    padding: 0 300px;
+    margin-top: 100px;
 }
 
+.house{
+    border: none;
+}
+.myTrip{
+    width: 100%;
+}
+.paymentinfo{
+    padding: 20px 0px 30px 10px;
+}
+.paymentinfo h4{
+    font-size: 18px;
+    padding-top: 5px;
+}
+.paymentinfo p{
+    padding: 20px 30px;
+    font-size: 15px;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+
+}
+.payment{
+    display: flex;
+}
 .container form{
     padding:20px;
-    width:1000px;
     background: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
@@ -37,6 +45,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     gap:15px;
+    margin-bottom: 40px;
 }
 
 .container form .row .col{
@@ -51,7 +60,7 @@ nav{
 }
 
 .container form .row .col .inputBox{
-    margin:15px 0;
+    margin:15px 100px 0px 0px;
 }
 
 .container form .row .col .inputBox span{
@@ -100,8 +109,25 @@ nav{
     background: #ff352f;
 }
 
+.container form .goback{
+    text-align: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.container form .goback a{
+    color:black;
+    font-size: 20px;
+}
+
 @media screen and (max-width: 990px){
     .container{
-        margin-top: 100px;
+        width: 100%;
+        padding: 10px;
     }
+    .payment{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    
 }
